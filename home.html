@@ -1,0 +1,162 @@
+
+<HTML>
+    <head>
+        <title>Cricket-@-Fingers</title>
+        <meta charset="utf-8">
+	<meta mame="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏏</text></svg>"
+      />
+    </head>
+    <body>
+
+        <!--FOR THE SECOND WINDOW-->
+
+        <div class='secondWindow scol-12 mcol-12 lcol-12 hidden'>
+          <div class='mainWindow scol-12 lcol-12 mcol-12'>
+              <div class='gameNameSecond scol-12 mcol-12 lcol-12'>Cricket-@-Fingers<button class='cancelSecond'>&times</button></div>
+              <div class='nameSecond scol-12 lcol-12 mcol-12'>
+                User Name</div>
+              <div class='chooseWickets scol-12 mcol-12 lcol-12'>
+                <p>Choose Number of Wickets : </p>
+
+
+                <input class='optionWicket' type='radio' name='selectWicket' id='oneWicket' value='1' required><label for='oneWicket'>1</label>
+                <input class='optionWicket'  type='radio' name='selectWicket' id='twoWicket' value='2' required><label for='twoWicket'>2</label>
+                <input class='optionWicket'  type='radio' name='selectWicket' id='threeWicket' value='3' required checked><label for='threeWicket'>3</label>
+                <input class='optionWicket'  type='radio' name='selectWicket' id='fourWicket' value='4' required><label for='fourWicket'>4</label>
+                <input class='optionWicket'  type='radio' name='selectWicket' id='fiveWicket' value='5' required><label for='fiveWicket'>5</label>
+
+              </div> <!--radio button tag closes here-->
+              <div class='flipCoinParent scol-12 lcol-12 mcol-12'>
+                  <div class='scol-12 mcol-12 lcol-12 tossCaption' >"TOSS TIME" <br>...Click on Your Side...</div>
+                  <br>
+                <!--Divide in 3 sections of 4 - 4 - 4-->
+                <div class='coinLeft scol-6 mcol-6 lcol-6' >
+                    <button type='submit' id='chooseHead'><img id='coinFront' src='coin front.jpg' height="150px" width="150px"></button>
+                    <p class='a'>Head</p>
+                    
+                </div>
+               
+                <div class='coinRight scol-6 mcol-6 lcol-6'>
+                    <button type="submit" id='chooseTail'> <img src='coin back.jpg' id='coinBack' height="150px" width="150px"></button>
+                    <p class='a'>Tail</p>
+                </div>
+
+              </div>
+              <!--FOR TOSS RESULT-->
+              <div class='tossResult scol-12 mcol-12 lcol-12'>
+                <div class='youLose scol-12 mcol-12 lcol-12'>
+                    OOPS !!  You've Lost the Toss . Move to the Game to Start Game !
+                </div>
+                <div class='youWin scol-12 mcol-12 lcol-12'>
+                    You've Won the Toss !!
+                    Make Your Choice : <br>
+                    <input type='radio' id='Batting' name='chooseBB' value='Batting' required checked><label for='Batting' class='b'>Batting🏏</label>
+                    <input type='radio' id='Bowling' name='chooseBB' value='Bowling' required><label for='Bowling' class='b'>Bowling🤾🏻‍♂️</label>
+
+                </div>
+            </div>  
+            <div class='finalPlay scol-12 lcol-12 mcol-12'><button type='submit' name='finalPlay' id='finalPlay'>Play Now</button></div>
+            <!--toss result ends here-->
+              </div>
+            </div>
+            <!--SECOND WINDOW Ends here-->
+       
+        <div class='game scol-12 mcol-12 lcol-12'>
+        <!-- DIV FOR SCOREBOARD-->
+        <div class='scoreboard lcol-12 scol-12 mcol-12'>
+            <div class='gameName name1 scol-12 mcol-12 lcol-12'>
+                <button name='startGame' class='startGame gameButtons'>Start Game</button>
+                <label class='gameButtons target' style="float:left">
+                    <span id='span1'style="font-weight: normal;">Inning 2 : Target - </span>
+                    <span id='span2' class='userTarget'>245 </span>
+                   
+                </label>
+                Cricket-@-Fingers
+                <button name='restartGame' class='restartGame gameButtons'>New Game</button> 
+                </div>
+            <div class='score lcol-12 mcol-12 scol-12 '>
+                <span class='runsMade'>41</span>-<span class='fallenWickets'>3</span>(<span class='totalWickets'>0</span>)
+            </div>
+            
+            <br>
+            <label class='toss_scoreboard lcol-12 mcol-12 scol-12'><span class='toss_scoreboard_name'>.</span> won the toss and decided on <span class='toss_scoreboard_action'>.</span>..</label>
+        </div>
+        <!--DIV FOR SCOREBOARD ENDS HERE-->
+
+        <!--practice for scoreboard-->
+        
+
+
+        <!-- DIV FOR USER and system-->
+            <div class='users lcol-12 scol-12 mcol-12'>
+                <div class='systemname scol-12 mcol-4 lcol-4'>
+                <div class='sys scol-12 mcol-12 lcol-12'>
+                    <div class="avatar">
+                        <img src='avatars/system1.png' height="90px" width="90px">
+                    </div>
+                             <p id='name'>System</p>
+                    
+                </div>
+                <div class='system_run run_0 scol-12 mcol-12 lcol-12'>0</div>
+                <div class='status scol-12 mcol-12 lcol-12' id='status1'>Batting🏏  <br></div>
+                </div>
+              
+
+
+
+
+                <div class='user scol-12 mcol-8 lcol-8'>
+                    <div class='username scol-12 mcol-12 lcol-12'>
+                        <div class="avatar">
+                            <img src='avatars/girl3.png' height="90px" width="90px" id='userImage'>
+                        </div>
+                         <p id='uname'>Your Name Here</p>
+                    </div>
+                    <div class='user_run run_1 scol-12 mcol-12 lcol-12'>0</div>
+                    <div class='status scol-12 mcol-12 lcol-12' id='status2'>Bowling🤾🏻‍♂️</div>
+                    <div class='buttons scol-12 mcol-12 lcol-12'>
+                      
+                        <!--Buttons in order-->
+                        <button class='btns' type='submit' id='mark1'>1</button>
+                        <button class='btns' type='submit' id='mark2'>2</button>
+                        <button class='btns' type='submit' id='mark3'>3</button>
+                        <button class='btns' type='submit' id='mark4'>4</button>
+                        <button class='btns' type='submit' id='mark5'>5</button>
+                        <button class='btns' type='submit' id='mark6'>6</button>
+                        <button class='btns' type='submit' id='mark10'>10</button>
+                        <!--Buttons Finished-->
+                    </div>
+                </div>
+
+
+            </div>
+         
+  
+        <div class='scorepair scol-12 mcol-12 lcol-12'>
+            
+        <div class='score1 scol-6 mcol-6 lcol-6'><p id='scores0' class='run_0'>0</p></div>
+            <div class='score2 scol-6 mcol-6 lcol-6'><p id='scores1' class='run_1'>0</p></div>
+
+
+        </div>
+       
+            <!--Commentary Starts here-->
+            <div class='commentary scol-12 mcol-12 lcol-12'>
+                <label class='comment scol-12 lcol-12 mcol-12'>--Live Commentary Here--</label>
+            </div>
+        </div>
+        <div class="inningsChange scol-12 mcol-12 lcol-12">
+            <button type='submit' class='innings2'>Innings Over , Play the Second Inning</button>
+        </div>
+        
+  
+
+  <script src='index.js'></script>
+        <script src='home.js'></script>
+        
+    </body>
+</HTML>

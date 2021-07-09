@@ -150,8 +150,8 @@ img:hover {
 .boom {
   text-align: center;
   font-family: "Sigmar One", cursive;
-  font-size: 3vw;
-  color: black;
+  font-size: 4vw;
+  color: whitesmoke;
 }
 .row {
   margin-top: 10px;
@@ -280,6 +280,9 @@ img:hover {
     line-height: 4vw;
     font-size: 3vw;
     word-spacing: 0.5vw;
+  }
+  .interaction {
+    font-size: 3.75vw;
   }
 }
 

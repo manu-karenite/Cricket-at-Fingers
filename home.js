@@ -551,7 +551,7 @@ document.querySelector('.startGame').addEventListener('click',function()
 {
         
         playing=true; //game is on
-
+    document.querySelector('.nameSecond').textContent = Name;
          document.querySelector('.secondWindow').classList.remove('hidden');
         document.querySelector('.game').classList.add('hidden');
         document.querySelector('body').classList.add('alternateImage');

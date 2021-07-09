@@ -265,7 +265,8 @@ function checkOutOrNot(run)
         else
         {
                 //give a proper commentary according to run
-                if(playing)processCommentary(run);
+                let getRun = Number(document.querySelector(`.run_${batting}`).textContent);
+                if(playing)processCommentary(getRun);
         }       
 }
 
